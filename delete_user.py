@@ -7,9 +7,9 @@ try:
     cur.execute(
         """
         DELETE FROM users
-        WHERE email = %s
+        WHERE id = %s
         """,
-        ("newalice@example.com",)
+        (1,)
     )
     conn.commit()
     print("User deleted successfully!")

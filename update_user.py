@@ -8,9 +8,9 @@ try:
         """
         UPDATE users
         SET email = %s
-        WHERE name = %s
+        WHERE id = %s
         """,
-        ("newalice@example.com", "Alice")
+        ("newalice@example.com", 1)
     )
     conn.commit()
     print("User updated successfully!")
